@@ -1,0 +1,97 @@
+/* Resetarea marginilor, padding-ului și a box-sizing pentru toate elementele */
+* {
+    margin: 0; /* Elimină marginile implicite ale elementelor */
+    padding: 0; /* Elimină padding-ul implicit al elementelor */
+    box-sizing: border-box; /* Asigură că padding-ul și border-ul sunt incluse în dimensiunile totale ale elementului */
+}
+
+/* Stilizarea de bază a corpului paginii */
+body {
+    font-family: 'Arial', sans-serif; /* Setează fontul paginii (Arial ca font principal, cu sans-serif ca fallback) */
+    background-color: rgb(255, 128, 191); /* Setează culoarea de fundal a paginii (roz deschis) */
+    color: #333; /* Culoarea textului (gri închis pentru contrast bun) */
+    line-height: 1.6; /* Setează înălțimea liniei pentru o lizibilitate mai bună */
+}
+
+/* Stilizarea imaginilor */
+img {
+    display: block; /* Face ca imaginile să fie elemente de tip bloc (elimino stilul implicit de inline) */
+    margin: 0 auto; /* Centrează imaginile pe orizontală */
+}
+
+/* Stilizarea secțiunilor (elementele <section>) */
+section {
+    padding: 60px 30px; /* Adaugă padding (spațiu interior) pe toate laturile secțiunii */
+    margin: 40px auto; /* Adaugă margini sus și jos (40px) și centrează secțiunea pe orizontală */
+    background-color: #fff; /* Culoare de fundal albă pentru secțiune */
+    border-radius: 8px; /* Colțuri rotunjite pentru secțiune */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adaugă o umbră subtilă pentru un efect 3D */
+    max-width: 1200px; /* Limitează lățimea maximă a secțiunii la 1200px */
+}
+
+/* Stilizarea titlurilor din secțiuni */
+section h2 {
+    font-size: 2.5rem; /* Setează dimensiunea fontului la 2.5rem pentru a fi mare */
+    color: #2D3E50; /* Culoare textului (un albastru închis) */
+    margin-bottom: 20px; /* Adaugă 20px de spațiu sub titlu */
+    text-align: center; /* Centrează titlul pe orizontală */
+    text-transform: uppercase; /* Transformă textul în majuscule */
+    font-weight: bold; /* Face titlul îngroșat (bold) */
+    background-position: 100px; /* Proprietatea background-position pare să fie inutilizată, ar putea fi o greșeală */
+}
+
+/* Stilizarea paragrafelor din secțiuni */
+section p {
+    font-size: 1.2rem; /* Setează dimensiunea fontului la 1.2rem pentru textul paragrafului */
+    margin-bottom: 20px; /* Adaugă 20px de spațiu sub paragraf */
+    text-align: center; /* Centrează textul paragrafului pe orizontală */
+}
+
+/* Stilizarea grilei de servicii */
+.service-grid {
+    display: grid; /* Transformă containerul într-o grilă */
+    grid-template-columns: repeat(2, 1fr); /* Crează două coloane de dimensiune egală (1fr fiecare) */
+    gap: 30px; /* Adaugă un spațiu de 30px între elementele grilei */
+    margin-top: 20px; /* Adaugă un spațiu de 20px deasupra grilei */
+}
+
+/* Stilizarea fiecărei cărți de serviciu */
+.service {
+    background-color: rgb(255, 128, 191); /* Fundal roz pentru fiecare element de serviciu */
+    color: white; /* Culoare text alb */
+    padding: 30px; /* Adaugă 30px de padding în interiorul fiecărei cărți */
+    border-radius: 8px; /* Colțuri rotunjite pentru fiecare serviciu */
+    text-align: center; /* Centrează textul în interiorul cărții de serviciu */
+    transition: transform 0.3s ease; /* Efect de tranziție pentru scalarea elementului (schimbare ușoară) */
+    background-image: center; /* Proprietatea background-image pare să fie incompletă (lipsesc detalii despre imagine) */
+}
+
+/* Efectul hover pentru serviciu */
+.service:hover {
+    transform: scale(1.05); /* Când utilizatorul trece cu mouse-ul peste un serviciu, acesta se mărește cu 5% */
+}
+
+/* Stilizarea titlurilor din fiecare card de serviciu */
+.service h3 {
+    font-size: 1.6rem; /* Setează dimensiunea fontului titlului din fiecare serviciu */
+    margin-bottom: 10px; /* Adaugă 10px de spațiu sub titlu */
+}
+
+/* Stilizarea paragrafului din fiecare card de serviciu */
+.service p {
+    font-size: 1.1rem; /* Setează dimensiunea fontului pentru descrierea serviciului */
+}
+
+/* Stilizarea footer-ului (subsolul paginii) */
+footer {
+    background-color: #2d3a3f; /* Fundal închis pentru footer */
+    color: white; /* Text alb */
+    padding: 15px 0; /* Adaugă padding sus și jos în footer */
+    text-align: center; /* Centrează textul în footer */
+    font-size: 1.1em; /* Dimensiune font mai mare pentru footer */
+}
+
+/* Stilizarea paragrafului din footer */
+footer p {
+    margin: 0; /* Elimină marginea implicită a paragrafului din footer */
+}

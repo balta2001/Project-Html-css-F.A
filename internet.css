@@ -1,0 +1,162 @@
+/* Resetarea stilurilor implicite ale browserului */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale pentru corpul paginii */
+body {
+    font-family: 'Arial', sans-serif; /* Font de bază */
+    background-color: rgb(255, 128, 191); /* Culoare de fundal roz */
+    color: #333; /* Culoare text */
+    line-height: 1.6; /* Îmbunătățirea lizibilității */
+}
+
+/* Stiluri pentru imagini: centrarea acestora */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Stiluri pentru secțiuni */
+section {
+    padding: 60px 30px;
+    margin: 40px auto;
+    background-color: #fff; /* Fundal alb */
+    border-radius: 8px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    max-width: 1200px; /* Lățime maximă pentru secțiuni */
+}
+
+/* Stiluri pentru titlurile secțiunilor */
+section h2 {
+    font-size: 2.5rem;
+    color: #2D3E50; /* Culoare albastru închis */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase; /* Transformare text în majuscule */
+    font-weight: bold;
+}
+
+/* Stiluri pentru paragrafe din secțiuni */
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grilă pentru servicii, afișând 2 coloane */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Stilizare pentru fiecare serviciu din grilă */
+.service {
+    background-color: rgb(255, 128, 191); /* Fundal roz */
+    color: white; /* Text alb */
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efect hover pe servicii */
+.service:hover {
+    transform: scale(1.05); /* Mărește ușor elementul la hover */
+}
+
+/* Stiluri pentru titlul serviciului */
+.service h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Stiluri pentru descrierea serviciului */
+.service p {
+    font-size: 1.1rem;
+}
+
+/* Aliniere centrată pentru elementele din secțiunea internet */
+.internet {
+    text-align: center;
+}
+
+/* Stiluri pentru containerul video */
+.video-container {
+    position: relative;
+    display: block;
+    max-width: 560px; /* Lățime maximă */
+    margin: 0 auto; /* Centrare */
+}
+
+/* Stiluri pentru miniatura video */
+.thumbnail {
+    width: 100%; /* Imagine responsive */
+    height: auto;
+    display: block;
+}
+
+/* Buton de play suprapus pe miniatură */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Face butonul de play vizibil la hover */
+.video-container:hover .play-button {
+    opacity: 1;
+}
+
+/* Efect hover pe butonul de play */
+.play-button:hover {
+    background-color: red;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Descrierea video-ului */
+.video-description {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    line-height: 1.5;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stilizare footer */
+footer {
+    background-color: #2d3a3f; /* Fundal gri-închis */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Eliminarea marginilor implicite din footer */
+footer p {
+    margin: 0;
+}

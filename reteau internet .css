@@ -1,0 +1,138 @@
+/* Setăm dimensiunea fontului de bază la 10px pentru a ușura calculul dimensiunilor în rem */
+html {
+  font-size: 10px; /* 1rem = 10px, 1.5rem = 15px, 2rem = 20px, etc. */
+}
+
+/* Stiluri pentru corpul paginii */
+body {
+  /* Fonturi native pentru sistemul de operare */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.6rem; /* Dimensiunea textului principal este de 16px (1.6rem) */
+  line-height: 1.5; /* Între spațiile dintre linii pentru o citire ușoară */
+  text-align: center; /* Aliniere centrală a textului */
+  color: #333; /* Culoare text standard - gri închis */
+  margin: 0; /* Eliminăm marginile implicite ale corpului */
+}
+
+/* Stiluri pentru titlul h1 */
+h1 {
+  font-size: 4rem; /* Titlul principal va avea dimensiunea de 40px */
+  margin-bottom: 0; /* Eliminăm marginea de jos */
+}
+
+/* Media query pentru ecrane mici (maxim 460px lățime), schimbă dimensiunea fontului pentru h1 */
+@media (max-width: 460px) {
+  h1 {
+      font-size: 3.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
+      line-height: 1.2; /* Reducem linia de înălțime pentru mai multă compunere */
+  }
+}
+
+/* Stiluri pentru titlurile h2 */
+h2 {
+  font-size: 3.25rem; /* Titlurile de nivel 2 vor avea dimensiunea de 32.5px */
+}
+
+/* Stiluri pentru linkuri */
+a {
+  color: #477ca7; /* Culoare linkurilor în mod normal */
+}
+
+/* Stiluri pentru linkuri vizitate */
+a:visited {
+  color: #74638f; /* Culoare linkurilor vizitate */
+}
+
+/* Stiluri pentru secțiunea principală a paginii */
+#main {
+  margin: 30px 8px; /* Margini pentru spațiu în jurul secțiunii */
+  padding: 15px; /* Padding intern pentru conținut */
+  border-radius: 20px; /* Colțuri rotunjite */
+  background: rgb(255, 128, 191); /* Fundal roz deschis */
+}
+
+/* Media query pentru ecrane mici (maxim 460px lățime), elimină marginile din secțiunea principală */
+@media (max-width: 460px) {
+  #main {
+      margin: 0; /* Eliminăm marginile pe ecrane mici */
+  }
+}
+
+/* Stiluri pentru imagini */
+img {
+  max-width: 75%; /* Imaginile vor avea o lățime maximă de 75% din containerul lor */
+  display: block; /* Asigurăm că imaginea este un bloc de tipul block-level */
+  height: auto; /* Înălțimea va fi ajustată proporțional */
+  margin: 0 auto; /* Centrarea imaginii în container */
+}
+
+/* Stiluri pentru div-ul care conține imaginea */
+#img-div {
+  background: black; /* Fundal negru pentru div-ul cu imagine */
+  padding: 40px; /* Padding în jurul imaginii */
+  margin: 100px; /* Margini exterioare pentru distanțare față de alte elemente */
+  border-radius: 20px; /* Colțuri rotunjite pentru div */
+}
+
+/* Stiluri pentru textul descriptiv de sub imagine */
+#img-div h3 {
+  color: white; /* Culoare albă pentru textul din cadrul div-ului cu imagine */
+}
+
+/* Stiluri pentru legenda imaginii (să presupunem că va fi folosit un element pentru caption) */
+#img-caption {
+  margin: 5px 0 5px 0; /* Margini pentru caption */
+}
+
+/* Media query pentru ecrane mici (maxim 460px lățime), ajustăm dimensiunea fontului pentru legenda imaginii */
+@media (max-width: 460px) {
+  #img-caption {
+      font-size: 1.4rem; /* Dimensiune font mai mică pentru ecrane mici */
+  }
+}
+
+/* Stiluri pentru titlurile de nivel 2 (headline) */
+#headline {
+  margin: 50px 0; /* Margini sus și jos pentru a adăuga spațiu */
+  text-align: center; /* Centrarea titlului */
+}
+
+/* Stiluri pentru lista de itemi */
+ul {
+  max-width: 550px; /* Lățime maximă de 550px pentru a nu depăși o lățime rezonabilă */
+  margin: 0 auto 50px auto; /* Centrarea listei și distanțarea de jos */
+  text-align: left; /* Alinierea textului la stânga */
+  line-height: 1.6; /* Mai mult spațiu între linii pentru lizibilitate */
+}
+
+/* Stiluri pentru fiecare element din listă */
+li {
+  margin: 16px 0; /* Margini sus și jos pentru fiecare element din listă */
+}
+
+/* Stiluri pentru blocurile de citate */
+blockquote {
+  font-style: italic; /* Stil de font italic */
+  max-width: 545px; /* Lățimea maximă a blocului de citat */
+  margin: 0 auto 50px auto; /* Centrarea citatului și distanțarea de jos */
+  text-align: left; /* Alinierea textului la stânga */
+}
+
+/* Stiluri pentru footer (subsolul paginii) */
+footer {
+  position: initial; /* Poziționare normală, fără a fi fixat */
+  bottom: 0; /* Fixăm footerul la baza paginii */
+  left: 0; /* Aliniem footerul la marginea din stânga */
+  width: 100%; /* Lățime completă a paginii */
+  background-color: #2d3a3f; /* Fundal închis pentru footer */
+  color: white; /* Culoare albă pentru textul din footer */
+  padding: 20px 0; /* Padding pentru a crea spațiu în interiorul footer-ului */
+  text-align: center; /* Centrarea textului */
+  font-size: 1.1em; /* Dimensiune font ușor mai mare */
+}
+
+/* Stiluri pentru paragraf în footer */
+footer p {
+  margin: 0; /* Eliminăm marginile pentru paragrafele din footer */
+}

@@ -1,0 +1,154 @@
+/* Resetarea marginilor, padding-ului și a box-sizing pentru toate elementele */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizarea de bază a corpului paginii */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 128, 191); /* Fundal roz deschis */
+    color: #333; /* Culoare text gri închis pentru contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Stilizarea secțiunilor */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+
+}
+
+section:hover{
+    transform: scale(1.02); /* Mărește ușor secțiunea (doar 2%) */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Crește umbra, dar mai subtil */
+
+}
+
+
+#evolutie {
+    padding: 40px;
+    margin: 20px auto;
+    background-color: rgb(255, 128, 191); /* Fundal roz deschis */
+    border-radius: 8px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    max-width: 1200px; /* Lățime maximă */
+    width: 100%; /* Lățime completă */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Tranformare lină */
+}
+
+#evolutie:hover {
+    transform: scale(1.02); /* Mărește ușor secțiunea (doar 2%) */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Crește umbra, dar mai subtil */
+}
+
+/* Alinierea titlurilor */
+h1, h2, h3 {
+    color: #2D3E50;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Stilizarea titlului principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Stilizarea sub-titlului */
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+/* Stilizarea titlurilor secundare */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Stilizarea imaginilor */
+.container {
+    display: flex;
+    justify-content: center;
+    /* Spatiu uniform între imagini */
+    flex-wrap: wrap; /* Permite imaginilor să se împacheteze pe rânduri atunci când nu mai au loc */
+    gap: 20px; /* Spațiu între imagini */
+}
+
+.dynamic-img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dynamic-img:hover {
+    transform: scale(1.05); /* Mărește imaginea cu 5% */
+    opacity: 0.8; /* Setează opacitatea la 80% pentru un efect mai subtil */
+}
+
+/* Stilizarea paragrafului */
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Stilizarea listelor */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Media queries pentru responsive design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    .dynamic-img {
+        max-width: 100%;
+    }
+}
+
+
+
+  
